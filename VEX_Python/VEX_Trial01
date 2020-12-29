@@ -1,0 +1,15 @@
+myVariable = 0
+
+def when_started1():
+    global myVariable
+    drivetrain.drive(FORWARD)
+    drivetrain.drive_for(FORWARD, 200, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 200, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 200, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+    drivetrain.drive_for(FORWARD, 200, MM)
+    drivetrain.turn_for(RIGHT, 90, DEGREES)
+
+vr_thread(when_started1())
